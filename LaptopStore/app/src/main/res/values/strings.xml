@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">LaptopStore</string>
+
+
+    <string-array name="model">
+
+        <item>acer</item>
+
+        <item>asus</item>
+
+        <item>dell</item>
+        <item>hp</item>
+
+        <item>lenova</item>
+
+        <item>samsung</item>
+
+
+    </string-array>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/back"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/model"
+        />
+
+        <ImageButton
+        android:id="@+id/ibcart"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="end"
+
+        android:layout_marginLeft="90pt"
+        android:layout_marginTop="1pt"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cart" />
+
+    </LinearLayout>
+
+
+
+    <ImageButton
+        android:id="@+id/logOut"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-30dp"
+        android:background="#fff"
+        app:srcCompat="@drawable/ic_logout"
+
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

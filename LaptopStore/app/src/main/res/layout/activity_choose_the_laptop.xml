@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChooseTheLaptop">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/acer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="acer"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/asus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="asus"
+
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/dell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="dell"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/hp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="hp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/lenova"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="lenova"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/samsung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="samsung"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"
+            android:orientation="vertical"
+
+            >
+
+            <RadioButton
+                android:id="@+id/fRam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="show"
+                android:text="4 Ram"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/sRam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="show"
+                android:text="6 Ram"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/eRam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="show"
+                android:text="8 Ram"
+                android:textStyle="bold"
+
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#222324"
+        android:text="submit"
+        android:textColor="#E3ECEA" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#222324"
+        android:onClick="cancel"
+        android:text="Skip"
+        android:textColor="#E3ECEA" />
+
+</LinearLayout>
